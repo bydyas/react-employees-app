@@ -1,14 +1,11 @@
 import './app-info.css';
 
-const AppInfo = ({ data }) => {
-    let employeesNum = data.length;
-    let increasedNum = (data.filter(item => item.increase === true)).length;
-
+const AppInfo = ({employeesNum, increasedNum}) => {
     return (
         <div className="app-info">
-            <h1>Учет сотрудников компании Х</h1>
-            <h2>Общее число сотрудников: {employeesNum}</h2>
-            <h2>Премию получат: {increasedNum}</h2>
+            <h1>Company employee accounting</h1>
+            <h2>Total number of employees: {employeesNum}</h2>
+            <h2>The award will be received: {increasedNum}</h2>
         </div>
     );
 }
